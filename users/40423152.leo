@@ -14,7 +14,11 @@
 <v t="leo.20160520101218.1"><vh>@edit run.py</vh></v>
 <v t="leo.20160520100941.1" a="E"><vh>@path app</vh>
 <v t="leo.20160520100941.2"><vh>@edit __init__.py</vh></v>
-<v t="leo.20160520101148.1"><vh>@edit views.py</vh></v>
+<v t="leo.20160520101148.1"><vh>@edit views.py_tutorial</vh></v>
+<v t="leo.20160520111118.1"><vh>@edit views.py</vh></v>
+<v t="leo.20160520110936.1" a="E"><vh>@edit index.html</vh>
+<v t="leo.20160520110916.1"><vh>@path templates</vh></v>
+</v>
 </v>
 </v>
 </v>
@@ -23,5 +27,25 @@
 <t tx="leo.20160520094642.2"></t>
 <t tx="leo.20160520100813.1"></t>
 <t tx="leo.20160520100941.1"></t>
+<t tx="leo.20160520110916.1">&lt;html&gt;
+  &lt;head&gt;
+    {% if title %}
+    &lt;title&gt;{{ title }} - microblog&lt;/title&gt;
+    {% else %}
+    &lt;title&gt;Welcome to microblog&lt;/title&gt;
+    {% endif %}
+  &lt;/head&gt;
+  &lt;body&gt;
+      &lt;h1&gt;Hello, {{ user.nickname }}!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</t>
+<t tx="leo.20160520110936.1">&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;{{ title }} - microblog&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+      &lt;h1&gt;Hello, {{ user.nickname }}!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</t>
 </tnodes>
 </leo_file>
